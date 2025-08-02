@@ -40,10 +40,10 @@ This project implements a hybrid recommendation system using both content-based 
 3. **Journal Impact Metrics** - Incorporates impact factors and domain-specific metrics in recommendations
 4. **Interactive Visualization** - Displays journal recommendations with relevance scores and submission requirements
 
-## Demo
+<!-- ## Demo
 
 ![Recommendation Interface](path/to/demo-screenshot1.png)
-![Analysis Dashboard](path/to/demo-screenshot2.png)
+![Analysis Dashboard](path/to/demo-screenshot2.png) -->
 
 ## Tech Stack
 
