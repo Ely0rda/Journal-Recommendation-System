@@ -2,7 +2,6 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Status](https://img.shields.io/badge/status-active-green)
 
 > A machine learning system that recommends academic journals based on paper abstracts and research interests.
@@ -49,7 +48,7 @@ This project implements a hybrid recommendation system using both content-based 
 
 - **Backend**: Python, Flask
 - **Data Processing**: Pandas, NumPy, NLTK
-- **Machine Learning**: TensorFlow, Scikit-learn, Transformers
+- **Machine Learning**: Pytorch, Scikit-learn, Transformers
 
 ## Installation
 
