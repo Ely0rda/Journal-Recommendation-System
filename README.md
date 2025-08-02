@@ -12,16 +12,12 @@
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Key Features](#key-features)
-- [Demo](#demo)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Testing](#testing)
-- [Deployment](#deployment)
 - [Skills Demonstrated](#skills-demonstrated)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
@@ -35,8 +31,7 @@ This project implements a hybrid recommendation system using both content-based 
 - NLP preprocessing module for text normalization and feature extraction
 - A vector embedding model using TF-IDF and word2vec/BERT
 - Similarity calculation engine using cosine similarity
-- User feedback integration for continuous model improvement
-- REST API for frontend integration
+
 
 ## Key Features
 
@@ -55,10 +50,6 @@ This project implements a hybrid recommendation system using both content-based 
 - **Backend**: Python, Flask
 - **Data Processing**: Pandas, NumPy, NLTK
 - **Machine Learning**: TensorFlow, Scikit-learn, Transformers
-- **Database**: MongoDB
-- **API Testing**: Postman, pytest
-- **Containerization**: Docker
-- **CI/CD**: GitHub Actions
 
 ## Installation
 
@@ -100,24 +91,7 @@ python app.py
 
 The application will be available at http://localhost:5000.
 
-### API Endpoints
 
-```python
-# Example: Get recommendations for a paper abstract
-import requests
-import json
-
-url = 'http://localhost:5000/api/recommendations'
-data = {
-    'abstract': 'This paper explores the application of deep learning in genomics...',
-    'keywords': ['deep learning', 'genomics', 'bioinformatics'],
-    'user_id': '12345'  # Optional
-}
-
-response = requests.post(url, json=data)
-recommendations = json.loads(response.text)
-print(recommendations)
-```
 
 ### Training the Model
 
@@ -125,42 +99,7 @@ print(recommendations)
 python scripts/train_model.py --data_path data/journals --epochs 20
 ```
 
-## Testing
 
-The project includes comprehensive test coverage:
-
-```
-# Run all tests
-pytest
-
-# Run specific test category
-pytest tests/test_embedding_models.py
-```
-
-The CI pipeline automatically runs tests on every pull request and push to the main branch.
-
-## Deployment
-
-### Docker Deployment
-
-```
-# Build the Docker image
-docker build -t journal-rec-system .
-
-# Run the container
-docker run -p 5000:5000 -e DATABASE_URI=mongodb://localhost:27017 journal-rec-system
-```
-
-### Cloud Deployment
-
-The application can be deployed to AWS, GCP, or Azure using the provided infrastructure-as-code templates:
-
-```
-# Example for AWS deployment
-cd deployment
-terraform init
-terraform apply -var="region=us-west-2"
-```
 
 ## Skills Demonstrated
 
@@ -168,7 +107,6 @@ terraform apply -var="region=us-west-2"
 - **Data Engineering**: Created efficient data pipelines for processing and analyzing large volumes of academic papers and journal metadata
 - **API Development**: Designed a RESTful API using Flask with proper documentation, rate limiting, and authentication
 - **System Architecture**: Developed a scalable recommendation system with clear separation of concerns and modular components
-- **DevOps**: Set up CI/CD pipelines with automated testing and containerized deployment
 
 ## Contributing
 
